@@ -3,10 +3,10 @@
 
 from flask.cli import FlaskGroup
 
-from src import app, db  # new
+from src import create_app, db
 
 
-cli = FlaskGroup(app)
+cli = FlaskGroup(create_app=create_app)
 
 
 @cli.command('recreate_db')
