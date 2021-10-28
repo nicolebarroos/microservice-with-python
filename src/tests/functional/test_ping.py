@@ -1,5 +1,6 @@
 import json
 
+
 def test_ping(test_app):
     #Given
     client = test_app.test_client()

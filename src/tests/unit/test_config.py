@@ -1,5 +1,6 @@
 import os
 
+
 def test_development_config(test_app):
     test_app.config.from_object('src.config.DevelopmentConfig')
     assert test_app.config['SECRET_KEY'] == 'my_precious'
